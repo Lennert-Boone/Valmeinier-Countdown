@@ -56,16 +56,18 @@
       color: #a8dadc;
   }
   
-  li {
+  .countdownList-item {
     color: #457b9d;
     display: inline-block;
     font-size: 2em;
     list-style-type: none;
-    padding: 1em;
     text-transform: uppercase;
+    width: 300px;
+    height: 300px;
+    
   }
   
-  li span {
+  .countdownList-item span {
     color: #e63946;
     display: block;
     font-size: 10rem;
