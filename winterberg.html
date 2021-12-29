@@ -5,20 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="shortcut icon" type="image/jpg" href="images/winterberg_logo.png"/>
 
     <title>winterberg Countdown</title>
 </head>
 <body class="winterberg">
     <script src="script.js"></script>
+
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger hamburger-winterberg"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="index.html">Valmeinier</a></li>
+                <li><a href="winterberg.html">Winterberg</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
     <div class="winterberg_container">
         <h1 id="winterberg_headline">Winterberg Countdown</h1>
         <div id="winterberg_countdown">
           <ul>
-            <li class="winterberg_list"><span id="winterberg_days"></span>days</li>
-            <li class="winterberg_list"><span id="winterberg_hours"></span>Hours</li>
-            <li class="winterberg_list"><span id="winterberg_minutes"></span>Minutes</li>
-            <li class="winterberg_list"><span id="winterberg_seconds"></span>Seconds</li>
+            <li class="countdownList-item winterberg_list"><span id="winterberg_days"></span>days</li>
+            <li class="countdownList-item winterberg_list"><span id="winterberg_hours"></span>Hours</li>
+            <li class="countdownList-item winterberg_list"><span id="winterberg_minutes"></span>Minutes</li>
+            <li class="countdownList-item winterberg_list"><span id="winterberg_seconds"></span>Seconds</li>
           </ul>
         </div>
       </div>
