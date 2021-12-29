@@ -15,7 +15,7 @@
   
   body {
     align-items: center;
-    background-color: #efefef;
+    background-color: #1d3557;
     display: flex;
     font-family: -apple-system, 
       BlinkMacSystemFont, 
@@ -27,33 +27,56 @@
       "Helvetica Neue", 
       sans-serif;
   }
+
+  .winterberg{
+      background-color: #e63946;
+  }
   
   .container {
     color: #333;
     margin: 0 auto;
     text-align: center;
   }
+
+  .winterberg_container {
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+  }
   
   h1 {
-    color: #e63946;
+    font-size: 4rem;
+    color: #a8dadc;
     font-weight: normal;
     letter-spacing: .125rem;
     text-transform: uppercase;
   }
+
+  #winterberg_headline{
+      color: #a8dadc;
+  }
   
   li {
-    color: #a8dadc;
+    color: #457b9d;
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 2em;
     list-style-type: none;
     padding: 1em;
     text-transform: uppercase;
   }
   
   li span {
-    color: #1d3557;
+    color: #e63946;
     display: block;
-    font-size: 4.5rem;
+    font-size: 10rem;
+  }
+
+  .winterberg_list span{
+      color: #1d3557;
+  }
+
+  .winterberg_list{
+      color: #333;
   }
 
   .buttons{
@@ -70,7 +93,7 @@
   .neumorphic {
     margin: 1rem;
     padding: .5em .5em;
-    background: #efefef;
+    background: #1d3557;
     border: none;
     border-radius: .5rem;
     color: #e63946;
@@ -81,21 +104,55 @@
     outline: none;
     cursor: pointer;
     transition: .2s ease-in-out;
-    box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
-                -6px -6px 10px rgba(255, 255, 255, .5),
-                6px 6px 8px rgba(255, 255, 255, .075),
-                6px 6px 10px rgba(0, 0, 0, .15);
+    box-shadow: -6px -6px 14px #264775b3,
+                -6px -6px 10px #26477580,
+                6px 6px 8px #26477513,
+                6px 6px 10px rgba(0, 0, 0, .35);
   }
   .neumorphic:hover {
-    box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
-                -2px -2px 4px rgba(255, 255, 255, .4),
-                2px 2px 2px rgba(255, 255, 255, .05),
-                2px 2px 4px rgba(0, 0, 0, .1);
+    box-shadow: -2px -2px 6px #26477599,
+                -2px -2px 4px #26477566,
+                2px 2px 2px #2647750d,
+                2px 2px 4px rgba(0, 0, 0, .3);
   }
   .neumorphic:active {
-    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
-                inset -2px -2px 4px rgba(255, 255, 255, .5),
-                inset 2px 2px 2px rgba(255, 255, 255, .075),
+    box-shadow: inset -2px -2px 6px #264775b3,
+                inset -2px -2px 4px #26477580,
+                inset 2px 2px 2px #26477513,
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+  }
+
+  .neumorphic_winterberg{
+    margin: 1rem;
+    padding: .5em .5em;
+    background: #e63946;
+    border: none;
+    border-radius: .5rem;
+    color: #e63946;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    box-shadow: -6px -6px 14px #eb4654b3,
+                -6px -6px 10px #eb465480,
+                6px 6px 8px #eb465413,
+                6px 6px 10px rgba(0, 0, 0, .15);
+  }
+
+  .neumorphic_winterberg:hover{
+    box-shadow: -2px -2px 6px #eb465499,
+                -2px -2px 4px #eb465466,
+                2px 2px 2px #eb46540d,
+                2px 2px 4px rgba(0, 0, 0, .1);
+  }
+
+  .neumorphic_winterberg:active{
+    box-shadow: inset -2px -2px 6px #eb4654b3,
+                inset -2px -2px 4px #eb465480,
+                inset 2px 2px 2px #eb465413,
                 inset 2px 2px 4px rgba(0, 0, 0, .15);
   }
   
@@ -111,4 +168,27 @@
     li span {
       font-size: calc(3.375rem * var(--smaller));
     }
+  }
+
+  .otherpagelink_wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100vh;
+  }
+
+  .otherpagelink{
+    height: 40vh;
+    width: 50px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .otherpagelink p{
+      color: #333;
+      text-decoration: none;
+      transform: rotate(270deg);
   }
