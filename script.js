@@ -84,12 +84,4 @@
               }
               //seconds
             }, 0)
-        }());
-(function(){
-    $(document).ready(function() {
-        $(".menu-open").click(function() {
-          $(".nav-menu").toggleClass("sidebar-open");
-        });
-      });
-})
-        
+        }());        
