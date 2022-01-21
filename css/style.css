@@ -194,3 +194,91 @@
       text-decoration: none;
       transform: rotate(270deg);
   }
+
+  @media only screen and (max-width: 1024px){
+
+    h1{
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    #countdown ul{
+      display: grid;
+      grid-template-areas:  
+      "first second"
+      "third fourth";
+    }
+
+    #countdown ul li{
+      width: auto;
+      height: auto;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+    }
+
+    #countdown ul li>span{
+      font-size: 6rem;
+    }
+
+    #winterberg_countdown ul{
+      display: grid;
+      grid-template-areas:  
+      "first second"
+      "third fourth";
+    }
+
+    #winterberg_countdown ul li{
+      width: auto;
+      height: auto;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+    }
+
+    #winterberg_countdown ul li>span{
+      font-size: 6rem;
+    }
+  }
+
+  @media only screen and (max-width: 480px){
+
+    h1{
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    #countdown ul{
+      display: grid;
+      grid-template-areas:  
+      "first second"
+      "third fourth";
+    }
+
+    #countdown ul li{
+      width: auto;
+      height: auto;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    #countdown ul li>span{
+      font-size: 5rem;
+    }
+
+    #winterberg_countdown ul{
+      display: grid;
+      grid-template-areas:  
+      "first second"
+      "third fourth";
+    }
+
+    #winterberg_countdown ul li{
+      width: auto;
+      height: auto;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    #winterberg_countdown ul li>span{
+      font-size: 5rem;
+    }
+  }
